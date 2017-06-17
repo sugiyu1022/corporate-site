@@ -131,7 +131,7 @@ header{
             @media screen and (-webkit-min-device-pixel-ratio:2),
                               (min-resolution: 2dppx){
                                   
-                                  background-image: url("../top/images/navi_news@2x.png");
+                                  background-image: url("../images/top/navi_news@2x.png");
             }
           }
         //li .navi_news a
@@ -485,12 +485,19 @@ h1{
     }
     //min-width: 551px
     
-    h2{
+    .news_release{
        color: #42b9d0;
        border-bottom: 3px solid #42b9d0;
        @include fontsize(15);
        font-weight: bold;
        padding-bottom: 15px;
+       margin-bottom: 20px;
+    }
+    
+    @media(min-width: 551px){
+        .news_release{
+            @include fontsize(20);
+        }
     }
     
     .news_li{
@@ -506,12 +513,20 @@ h1{
                 font-weight: bold;
                 margin-bottom: 3px;
             }
+            
+            @media(min-width: 551px){
+                span{
+                    display: inline-block;
+                    margin-bottom: 0;
+                    padding-right: 10px;
+                }
+            }
         }
     }
     
     #main{
         
-        h2{
+        .company_title{
             color: #42b9d0;
             border-bottom: 3px solid #42b9d0;
             @include fontsize(15);
@@ -521,7 +536,7 @@ h1{
         }
         
         @media(min-width: 551px){
-            h2{
+            .company_title{
                 @include fontsize(20);
                 padding-bottom: 20px;
             }

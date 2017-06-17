@@ -75,7 +75,7 @@ header {
         background-size: 40px 40px; } }
     @media screen and (min-width: 551px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 551px) and (min-resolution: 2dppx) {
       header .pc_navi_li li.navi_news a {
-        background-image: url("../top/images/navi_news@2x.png"); } }
+        background-image: url("../images/top/navi_news@2x.png"); } }
   @media (min-width: 551px) {
       header .pc_navi_li li.navi_company a {
         background-repeat: no-repeat;
@@ -273,13 +273,18 @@ h1 {
   @media (min-width: 551px) {
     #contents #main {
       padding-right: 20px; } }
-  #contents h2 {
+  #contents .news_release {
     color: #42b9d0;
     border-bottom: 3px solid #42b9d0;
     font-size: 15px;
     font-size: 1.5rem;
     font-weight: bold;
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+    margin-bottom: 20px; }
+  @media (min-width: 551px) {
+    #contents .news_release {
+      font-size: 20px;
+      font-size: 2rem; } }
   #contents .news_li {
     font-size: 15px;
     font-size: 1.5rem; }
@@ -290,7 +295,12 @@ h1 {
         display: block;
         font-weight: bold;
         margin-bottom: 3px; }
-  #contents #main h2 {
+      @media (min-width: 551px) {
+        #contents .news_li li span {
+          display: inline-block;
+          margin-bottom: 0;
+          padding-right: 10px; } }
+  #contents #main .company_title {
     color: #42b9d0;
     border-bottom: 3px solid #42b9d0;
     font-size: 15px;
@@ -299,7 +309,7 @@ h1 {
     padding-bottom: 15px;
     margin-bottom: 0; }
   @media (min-width: 551px) {
-    #contents #main h2 {
+    #contents #main .company_title {
       font-size: 20px;
       font-size: 2rem;
       padding-bottom: 20px; } }
